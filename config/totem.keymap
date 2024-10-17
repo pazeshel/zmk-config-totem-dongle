@@ -36,6 +36,21 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <32 37>;
+        };
+
+        combo_screenshot {
+            bindings = <&kp LG(LS(N4))>;
+            key-positions = <9 8>;
+        };
+
+        numlock_combo {
+            bindings = <&tog 1>;
+            key-positions = <31 26>;
+        };
     };
 
     keymap {
@@ -60,19 +75,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q             &kp W               &kp F           &kp P           &kp B      &kp J    &kp L            &kp U            &kp Y                &kp SEMI
-           &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_GUI T  &kp G      &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O
-&lt 3 TAB  &kp Z             &kp X               &kp C           &kp D           &kp V      &kp K    &kp H            &kp COMMA        &kp DOT              &kp FSLH           &kp SQT
-                                                 &kp BSPC        &lt 1 SPACE     &kp ESC    &kp RET  &lt 2 SPACE      &kp BSPC
+           &kp Q             &kp W               &kp F                               &kp P           &kp B      &kp J    &kp L            &kp U                               &kp Y                &kp SEMI
+           &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S                      &mt LEFT_GUI T  &kp G      &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E                     &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O
+&lt 3 TAB  &kp Z             &kp X               &kp C                               &kp D           &kp V      &kp K    &kp H            &kp COMMA                           &kp DOT              &kp FSLH           &kp SQT
+                                                 &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 SPACE     &kp ESC    &kp RET  &lt 2 SPACE      &mt LS(LA(LEFT_CONTROL)) BACKSPACE
             >;
         };
 
         num_sym_layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp CAPS  &trans  &trans  &trans  &kp GRAVE               &kp BACKSLASH          &kp NUMBER_7  &kp N8        &kp NUMBER_9  &kp MINUS
+        &trans    &trans  &trans  &trans  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&trans  &trans    &trans  &trans  &trans  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp EQUAL
+                          &trans  &trans  &trans                  &trans                 &kp NUMBER_0  &trans
             >;
         };
 
