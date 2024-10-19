@@ -75,6 +75,30 @@
             key-positions = <18 19>;
             layers = <1>;
         };
+
+        combo_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <21 22>;
+            layers = <0 1 2>;
+        };
+
+        combo_paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <21 25>;
+            layers = <0 1 2>;
+        };
+
+        combo_copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <21 23>;
+            layers = <0 1 2>;
+        };
+
+        combo_undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <21 24>;
+            layers = <0 1 2>;
+        };
     };
 
     keymap {
