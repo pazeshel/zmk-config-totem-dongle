@@ -67,6 +67,12 @@
             bindings = <&kp DOT>;
             key-positions = <30 29>;
         };
+
+        combo_multiply {
+            bindings = <&kp KP_ASTERISK>;
+            key-positions = <18 19>;
+            layers = <1>;
+        };
     };
 
     keymap {
