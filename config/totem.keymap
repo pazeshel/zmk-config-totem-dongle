@@ -49,7 +49,7 @@
 
         combo_numlock {
             bindings = <&tog 1>;
-            key-positions = <31 26>;
+            key-positions = <27 30>;
         };
 
         combo_capsword {
@@ -60,13 +60,13 @@
 
         combo_comma {
             bindings = <&kp COMMA>;
-            key-positions = <28 29>;
+            key-positions = <16 17>;
             layers = <1>;
         };
 
         combo_dot {
             bindings = <&kp DOT>;
-            key-positions = <30 29>;
+            key-positions = <17 18>;
             layers = <1>;
         };
 
