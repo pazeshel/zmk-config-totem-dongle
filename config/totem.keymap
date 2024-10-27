@@ -35,11 +35,13 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            layers = <0 1 2>;
         };
 
         combo_del {
             bindings = <&kp DEL>;
             key-positions = <32 37>;
+            layers = <0 1>;
         };
 
         combo_screenshot {
