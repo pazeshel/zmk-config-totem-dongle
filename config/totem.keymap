@@ -126,9 +126,9 @@
 
         nav_layer {
             bindings = <
-        &trans     &trans     &trans             &trans    &trans    &kp HOME  &kp LC(LS(TAB))  &kp UP     &kp LC(TAB)   &kp LG(LS(NUMBER_4))
+        &trans     &trans     &trans             &trans    &trans    &kp HOME  &kp LC(LS(TAB))  &kp UP     &kp LC(TAB)   &kp LG(GRAVE)
         &kp LSHFT  &kp LCTRL  &kp LALT           &kp LGUI  &trans    &kp END   &kp LEFT         &kp DOWN   &kp RIGHT     &trans
-&trans  &trans     &trans     &trans             &trans    &trans    &trans    &kp PG_DN        &kp PG_UP  &kp LG(LEFT)  &kp LG(RIGHT)         &kp LG(GRAVE)
+&trans  &trans     &trans     &trans             &trans    &trans    &trans    &kp PG_DN        &kp PG_UP  &kp LG(LEFT)  &kp LG(RIGHT)  &trans
                               &kp LA(BACKSPACE)  &trans    &trans    &trans    &trans           &trans
             >;
         };
