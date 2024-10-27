@@ -77,30 +77,6 @@
             layers = <1>;
         };
 
-        combo_cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <21 22>;
-            layers = <0 1 2>;
-        };
-
-        combo_paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <21 25>;
-            layers = <0 1 2>;
-        };
-
-        combo_copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <21 23>;
-            layers = <0 1 2>;
-        };
-
-        combo_undo {
-            bindings = <&kp LG(Z)>;
-            key-positions = <21 24>;
-            layers = <0 1 2>;
-        };
-
         combo_exit_numlock {
             bindings = <&to 0>;
             key-positions = <16 19>;
@@ -130,28 +106,28 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q             &kp W               &kp F                               &kp P           &kp B      &kp J    &kp L            &kp U                               &kp Y                &kp SEMI
-           &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S                      &mt LEFT_GUI T  &kp G      &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E                     &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O
-&lt 3 TAB  &kp Z             &kp X               &kp C                               &kp D           &kp V      &kp K    &kp H            &kp COMMA                           &kp DOT              &kp FSLH           &kp SQT
-                                                 &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 SPACE     &kp ESC    &kp RET  &lt 2 SPACE      &mt LS(LA(LEFT_CONTROL)) BACKSPACE
+           &kp Q             &kp W               &kp F                               &kp P           &kp B         &kp J    &kp L            &kp U                               &kp Y                &kp SEMI
+           &mt LEFT_SHIFT A  &mt LEFT_CONTROL R  &mt LEFT_ALT S                      &mt LEFT_GUI T  &kp G         &kp M    &mt RIGHT_GUI N  &mt RIGHT_ALT E                     &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT O
+&lt 3 TAB  &kp Z             &kp X               &kp C                               &kp D           &kp V         &kp K    &kp H            &kp COMMA                           &kp DOT              &kp FSLH           &kp SQT
+                                                 &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 SPACE     &kp LSHIFT    &kp RET  &lt 2 SPACE      &mt LS(LA(LEFT_CONTROL)) BACKSPACE
             >;
         };
 
         num_sym_layer {
             bindings = <
-        &trans     &trans     &trans    &trans    &kp GRAVE               &kp BACKSLASH                           &kp NUMBER_7  &kp N8        &kp NUMBER_9  &kp MINUS
-        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp LEFT_PARENTHESIS    &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&trans  &trans     &trans     &trans    &trans    &kp LEFT_BRACKET        &mt RIGHT_BRACKET LEFT_BRACE            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &mt LEFT_SHIFT EQUAL
-                              &trans    &trans    &trans                  &trans                                  &kp NUMBER_0  &trans
+        &kp LG(Q)  &kp LG(W)  &kp LG(F)  &kp LG(P)  &kp GRAVE    &kp BACKSLASH                           &kp NUMBER_7  &kp N8             &kp NUMBER_9  &kp MINUS
+        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6  &mt RIGHT_SHIFT PLUS
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &trans     &kp LG(V)    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH             &kp EQUAL
+                              &trans     &trans     &trans       &trans                                  &kp NUMBER_0  &kp LA(BACKSPACE)
             >;
         };
 
         nav_layer {
             bindings = <
-        &trans     &trans     &trans    &trans    &trans    &kp HOME  &kp LC(LS(TAB))  &kp UP     &kp LC(TAB)   &kp LG(LS(NUMBER_4))
-        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp END   &kp LEFT         &kp DOWN   &kp RIGHT     &trans
-&trans  &trans     &trans     &trans    &trans    &trans    &trans    &kp PG_DN        &kp PG_UP  &kp LG(LEFT)  &kp LG(RIGHT)         &kp LG(GRAVE)
-                              &trans    &trans    &trans    &trans    &trans           &trans
+        &trans     &trans     &trans             &trans    &trans    &kp HOME  &kp LC(LS(TAB))  &kp UP     &kp LC(TAB)   &kp LG(LS(NUMBER_4))
+        &kp LSHFT  &kp LCTRL  &kp LALT           &kp LGUI  &trans    &kp END   &kp LEFT         &kp DOWN   &kp RIGHT     &trans
+&trans  &trans     &trans     &trans             &trans    &trans    &trans    &kp PG_DN        &kp PG_UP  &kp LG(LEFT)  &kp LG(RIGHT)         &kp LG(GRAVE)
+                              &kp LA(BACKSPACE)  &trans    &trans    &trans    &trans           &trans
             >;
         };
 
