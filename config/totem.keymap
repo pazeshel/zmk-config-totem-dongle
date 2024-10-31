@@ -84,6 +84,12 @@
             key-positions = <16 19>;
             layers = <1>;
         };
+
+        combo_delword {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <36 32>;
+            layers = <0>;
+        };
     };
 
     behaviors {
