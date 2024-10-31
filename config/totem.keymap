@@ -156,10 +156,10 @@
 
         num_sym_layer {
             bindings = <
-        &kp LG(Q)  &kp LG(W)  &kp LG(F)  &kp LG(P)  &kp GRAVE    &kp BACKSLASH                           &kp NUMBER_7  &kp N8             &kp NUMBER_9  &kp MINUS
-        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6  &mt RIGHT_SHIFT PLUS
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &trans     &kp LG(V)    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &kp SLASH             &kp EQUAL
-                              &trans     &trans     &trans       &trans                                  &kp NUMBER_0  &kp LA(BACKSPACE)
+        &kp LG(Q)  &kp LG(W)  &kp LG(F)  &kp LG(P)  &kp GRAVE    &kp BACKSLASH                           &kp NUMBER_7  &kp N8         &kp NUMBER_9  &kp MINUS
+        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &mt RIGHT_SHIFT PLUS
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &trans     &kp LG(V)    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp SLASH             &kp EQUAL
+                              &trans     &trans     &trans       &trans                                  &kp NUMBER_0  &kp BACKSPACE
             >;
         };
 
