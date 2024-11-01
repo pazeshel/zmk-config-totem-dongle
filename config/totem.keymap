@@ -92,22 +92,22 @@
         };
 
         mods_lgui {
-            bindings = <&sk LEFT_GUI>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <13 24>;
         };
 
         mods_lctrl {
-            bindings = <&sk LCTRL>;
+            bindings = <&kp LCTRL>;
             key-positions = <11 22>;
         };
 
         mods_lshft {
-            bindings = <&sk LSHFT>;
+            bindings = <&kp LSHFT>;
             key-positions = <10 21>;
         };
 
         mods_lalt {
-            bindings = <&sk LALT>;
+            bindings = <&kp LALT>;
             key-positions = <12 23>;
         };
     };
