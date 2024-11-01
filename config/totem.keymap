@@ -35,13 +35,13 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-            layers = <0 1 2>;
+            layers = <0 2 3>;
         };
 
         combo_del {
             bindings = <&kp DEL>;
             key-positions = <32 37>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         combo_screenshot {
@@ -50,7 +50,7 @@
         };
 
         combo_numlock {
-            bindings = <&to 1>;
+            bindings = <&to 2>;
             key-positions = <27 30>;
             layers = <0>;
         };
@@ -64,25 +64,25 @@
         combo_comma {
             bindings = <&kp COMMA>;
             key-positions = <16 17>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_dot {
             bindings = <&kp DOT>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_multiply {
             bindings = <&kp KP_ASTERISK>;
             key-positions = <18 19>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_exit_numlock {
             bindings = <&to 0>;
             key-positions = <16 19>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_delword {
@@ -153,17 +153,26 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q              &kp W                &kp F                               &kp P            &kp B           &kp J    &kp L             &kp U                               &kp Y                 &kp SEMI
-           &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml LEFT_ALT S                     &hml LEFT_GUI T  &kp G           &kp M    &hmr RIGHT_GUI N  &hmr RIGHT_ALT E                    &hmr RIGHT_CONTROL I  &hmr RIGHT_SHIFT O
-&lt 3 TAB  &kp Z              &kp X                &kp C                               &kp D            &kp V           &kp K    &kp H             &kp COMMA                           &kp DOT               &kp FSLH            &kp SQT
-                                                   &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 SPACE      &smart_shift    &kp RET  &lt 2 SPACE       &mt LS(LA(LEFT_CONTROL)) BACKSPACE
+           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J    &kp L        &kp U            &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M    &kp N        &kp E            &kp I    &kp O
+&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K    &kp H        &kp COMMA        &kp DOT  &kp FSLH  &kp SQT
+                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &smart_shift    &kp RET  &lt 3 SPACE  &lt 1 BACKSPACE
+            >;
+        };
+
+        layer_rmods {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &sk RGUI  &sk RALT  &sk RCTRL  &sk RSHFT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
 
         num_sym_layer {
             bindings = <
         &kp LG(Q)  &kp LG(W)  &kp LG(F)  &kp LG(P)  &kp GRAVE    &kp BACKSLASH                           &kp NUMBER_7  &kp N8         &kp NUMBER_9  &kp MINUS
-        &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &mt RIGHT_SHIFT PLUS
+        &sk LSHFT  &sk LCTRL  &sk LALT   &sk LGUI   &trans       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &mt RIGHT_SHIFT PLUS
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &trans     &kp LG(V)    &mt RIGHT_BRACKET LEFT_BRACKET          &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp SLASH             &kp EQUAL
                               &trans     &trans     &trans       &trans                                  &kp NUMBER_0  &kp BACKSPACE
             >;
