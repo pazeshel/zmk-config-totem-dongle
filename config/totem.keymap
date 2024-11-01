@@ -102,6 +102,11 @@
             key-positions = <33 34>;
             layers = <0 1 2 3>;
         };
+
+        combo_cmdenter {
+            bindings = <&kp LG(ENTER)>;
+            key-positions = <33 35 36>;
+        };
     };
 
     behaviors {
