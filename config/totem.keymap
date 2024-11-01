@@ -129,6 +129,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 35 36 37>;
         };
+
+        rbkspc: rbkspc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RBKSPC";
+            #binding-cells = <0>;
+            bindings = <&lt 1 BACKSPACE>, <&key_repeat>;
+        };
     };
 
     keymap {
@@ -153,10 +160,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J    &kp L        &kp U            &kp Y    &kp SEMI
-           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M    &kp N        &kp E            &kp I    &kp O
-&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K    &kp H        &kp COMMA        &kp DOT  &kp FSLH  &kp SQT
-                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &smart_shift    &kp RET  &lt 3 SPACE  &lt 1 BACKSPACE
+           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J    &kp L        &kp U      &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M    &kp N        &kp E      &kp I    &kp O
+&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K    &kp H        &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
+                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &smart_shift    &kp RET  &lt 3 SPACE  &rbkspc
             >;
         };
 
