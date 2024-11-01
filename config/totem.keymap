@@ -35,13 +35,13 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-            layers = <0 2 3>;
+            layers = <0 1 2>;
         };
 
         combo_del {
             bindings = <&kp DEL>;
             key-positions = <32 37>;
-            layers = <0 2>;
+            layers = <0 1>;
         };
 
         combo_screenshot {
@@ -50,7 +50,7 @@
         };
 
         combo_numlock {
-            bindings = <&to 2>;
+            bindings = <&to 1>;
             key-positions = <27 30>;
             layers = <0>;
         };
@@ -64,31 +64,51 @@
         combo_comma {
             bindings = <&kp COMMA>;
             key-positions = <16 17>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_dot {
             bindings = <&kp DOT>;
             key-positions = <17 18>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_multiply {
             bindings = <&kp KP_ASTERISK>;
             key-positions = <18 19>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_exit_numlock {
             bindings = <&to 0>;
             key-positions = <16 19>;
-            layers = <2>;
+            layers = <1>;
         };
 
         combo_delword {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <36 32>;
             layers = <0>;
+        };
+
+        mods_lgui {
+            bindings = <&sk LEFT_GUI>;
+            key-positions = <13 24>;
+        };
+
+        mods_lctrl {
+            bindings = <&sk LCTRL>;
+            key-positions = <11 22>;
+        };
+
+        mods_lshft {
+            bindings = <&sk LSHFT>;
+            key-positions = <10 21>;
+        };
+
+        mods_lalt {
+            bindings = <&sk LALT>;
+            key-positions = <12 23>;
         };
     };
 
@@ -134,7 +154,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RBKSPC";
             #binding-cells = <0>;
-            bindings = <&lt 1 BACKSPACE>, <&key_repeat>;
+            bindings = <&lt 0 BACKSPACE>, <&key_repeat>;
         };
     };
 
@@ -160,19 +180,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J    &kp L        &kp U            &kp Y    &kp SEMI
-           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M    &kp N        &kp E            &kp I    &kp O
-&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K    &kp H        &kp COMMA        &kp DOT  &kp FSLH  &kp SQT
-                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &smart_shift    &kp RET  &lt 3 SPACE  &lt 1 BACKSPACE
-            >;
-        };
-
-        layer_rmods {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &sk RGUI  &sk RALT  &sk RCTRL  &sk RSHFT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J    &kp L        &kp U                        &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M    &kp N        &kp E                        &kp I    &kp O
+&lt 3 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K    &kp H        &kp COMMA                    &kp DOT  &kp FSLH  &kp SQT
+                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 1 SPACE  &smart_shift    &kp RET  &lt 2 SPACE  &mt LA(LS(RCTRL)) BACKSPACE
             >;
         };
 
