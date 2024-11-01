@@ -106,6 +106,7 @@
         combo_cmdenter {
             bindings = <&kp LG(ENTER)>;
             key-positions = <33 35 36>;
+            layers = <0>;
         };
     };
 
