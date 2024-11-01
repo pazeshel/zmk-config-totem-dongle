@@ -136,6 +136,15 @@
             #binding-cells = <0>;
             bindings = <&lt 1 BACKSPACE>, <&key_repeat>;
         };
+
+        mods: mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -169,10 +178,10 @@
 
         layer_rmods {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &sk RGUI  &sk RALT  &sk RCTRL  &sk RSHFT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans     &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+        &trans         &trans                &trans            &trans            &trans    &trans  &trans        &trans        &trans         &trans
+        &mods LSHFT A  &mods LEFT_CONTROL R  &mods LEFT_ALT S  &mods LEFT_GUI T  &trans    &trans  &mods RGUI N  &mods RALT E  &mods RCTRL I  &mods RSHFT O
+&trans  &trans         &trans                &trans            &trans            &trans    &trans  &trans        &trans        &trans         &trans         &trans
+                                             &trans            &trans            &trans    &trans  &trans        &trans
             >;
         };
 
