@@ -28,6 +28,13 @@
     require-prior-idle-ms = <200>;
 };
 
+&lt {
+    require-prior-idle-ms = <150>;
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
