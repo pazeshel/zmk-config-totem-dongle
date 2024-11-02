@@ -223,7 +223,7 @@
         nav_layer {
             bindings = <
         &trans     &trans     &trans             &trans    &trans    &kp HOME  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)   &kp LG(GRAVE)
-        &kp LSHFT  &kp LCTRL  &kp LALT           &kp LGUI  &trans    &kp END   &kp LEFT         &kp DOWN       &kp RIGHT     &kp LG(BACKSLASH)
+        &sk LSHFT  &sk LCTRL  &sk LALT           &sk LGUI  &trans    &kp END   &kp LEFT         &kp DOWN       &kp RIGHT     &kp LG(BACKSLASH)
 &trans  &trans     &trans     &trans             &trans    &trans    &trans    &kp PAGE_UP      &kp PAGE_DOWN  &kp LG(LEFT)  &kp LG(RIGHT)      &trans
                               &kp LA(BACKSPACE)  &trans    &trans    &trans    &trans           &trans
             >;
