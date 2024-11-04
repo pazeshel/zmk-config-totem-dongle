@@ -195,10 +195,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q  &kp W  &kp F                               &kp P        &kp B           &kp J  &kp L        &kp U                        &kp Y    &kp SEMI
-           &kp A  &kp R  &kp S                               &kp T        &kp G           &kp M  &kp N        &kp E                        &kp I    &kp O
-&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V           &kp K  &kp H        &kp COMMA                    &kp DOT  &kp FSLH  &kp SQT
-                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &smart_shift    &mo 1  &lt 3 SPACE  &mt LS(LA(LCTRL)) BACKSPACE
+           &kp Q  &kp W  &kp F                               &kp P        &kp B             &kp J  &kp L        &kp U                        &kp Y    &kp SEMI
+           &kp A  &kp R  &kp S                               &kp T        &kp G             &kp M  &kp N        &kp E                        &kp I    &kp O
+&lt 4 TAB  &kp Z  &kp X  &kp C                               &kp D        &kp V             &kp K  &kp H        &kp COMMA                    &kp DOT  &kp FSLH  &kp SQT
+                         &mt LS(LA(LC(LEFT_GUI))) BACKSPACE  &lt 2 SPACE  &sk LEFT_SHIFT    &mo 1  &lt 3 SPACE  &mt LS(LA(LCTRL)) BACKSPACE
             >;
         };
 
