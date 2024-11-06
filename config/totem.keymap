@@ -100,12 +100,6 @@
             layers = <0>;
         };
 
-        combo_renter {
-            bindings = <&kp ENTER>;
-            key-positions = <35 36>;
-            layers = <0 1 2 3>;
-        };
-
         combo_lenter {
             bindings = <&kp ENTER>;
             key-positions = <33 34>;
