@@ -178,7 +178,7 @@
         split_browser: split_browser {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(B))) &kp LG(N) &kp LS(LA(LC(I))) &kp LG(L)>;
+            bindings = <&kp LS(LC(LA(N))) &kp LG(N) &kp LS(LA(LC(I))) &kp LG(L)>;
             label = "SPLIT_BROWSER";
         };
     };
