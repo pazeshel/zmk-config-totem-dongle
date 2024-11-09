@@ -25,14 +25,14 @@
     quick-tap-ms = <175>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <225>;
+    tapping-term-ms = <200>;
     require-prior-idle-ms = <125>;
 };
 
 &lt {
     require-prior-idle-ms = <125>;
-    flavor = "balanced";
-    tapping-term-ms = <225>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
     quick-tap-ms = <175>;
 };
 
